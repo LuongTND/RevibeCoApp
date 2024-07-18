@@ -1,0 +1,6 @@
+.modal-body-content {
+    word-wrap: break-word;
+    max-width: 100%;
+    max-height: 400px; /* Giới hạn chiều cao modal */
+    overflow-y: auto; /* Thêm thanh cuộn dọc nếu nội dung vượt quá chiều cao tối đa */
+}

@@ -1,0 +1,159 @@
+.shop-index__section {
+  position: relative;
+  margin-bottom: 60px;
+  background-color: #ff0000;
+}
+
+.shop-index__section.alt {
+  background-color: #f5f5f5;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-width: 1px 0 1px 0;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Thêm prefixes cho trình duyệt */
+.shop-slideshow__control {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  width: 30px;
+  height: 70px;
+  opacity: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: opacity .3s;
+  -o-transition: opacity .3s;
+  transition: opacity .3s;
+}
+
+/* Kiểm tra và điều chỉnh responsivity */
+@media (max-width: 767px) {
+  .shop-index__section.alt {
+      padding-top: 40px;
+      padding-bottom: 40px;
+  }
+
+  .shop-slideshow__heading {
+      font-size: 32px;
+  }
+
+  .shop-slideshow__subheading {
+      font-size: 16px;
+  }
+}
+
+/* Bổ sung prefixes cho trình duyệt */
+@media (max-width: 767px) {
+  .shop__slideshow .carousel-inner .item {
+      height: 400px;
+      padding: 0 30px;
+      text-align: center;
+  }
+}
+
+/* Bổ sung prefixes cho trình duyệt */
+@media (max-width: 767px) {
+  .shop-item-img__main {
+      width: -webkit-calc(100% - 60px);
+      width: calc(100% - 60px);
+  }
+
+  .shop-item-img__aside {
+      width: 50px;
+  }
+}
+
+/* Shop filter: Colors */
+.shop-filter__color {
+  display: inline-block;
+  margin: 0 2px 2px 0;
+}
+
+.shop-filter__color input[type="text"] {
+  display: none;
+}
+
+/* Tùy chỉnh cho khung chọn màu */
+.shop-filter__color label {
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Tùy chỉnh khi người dùng hover hoặc chọn màu */
+.shop-filter__color label:hover,
+.shop-filter__color input[type="radio"]:checked + label {
+  border-color: #333333;
+}
+
+/* Tùy chỉnh khi màu đã được chọn */
+.shop-filter__color input[type="radio"]:checked + label {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Style cho radio buttons */
+input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+
+input[type="radio"]:checked::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Style cho checkbox */
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+
+input[type="checkbox"]:checked::before {
+  content: '✔';
+  font-size: 14px;
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+input[type="radio"] + label {
+  margin-left: 10px; /* Khoảng cách giữa radio button và label */
+}
+
+input[type="checkbox"] + label {
+  margin-left: 10px; /* Khoảng cách giữa checkbox và label */
+}

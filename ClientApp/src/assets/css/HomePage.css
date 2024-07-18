@@ -1,0 +1,28 @@
+
+.header-search-form {
+    position: relative;
+  }
+  
+  .for-des {
+    display: block !important;
+  }
+  
+  .header-search-form button {
+    background: transparent;
+    border: none;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 48px;
+    height: 100%;
+    opacity: 0.5;
+  }
+  
+  .header-search-form .form-input {
+    font-size: 14px;
+    padding-right: 40px;
+    width: 200px;
+    height: 40px;
+  }
